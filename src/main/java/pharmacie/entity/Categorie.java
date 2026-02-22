@@ -35,4 +35,13 @@ public class Categorie {
 	@JsonIgnoreProperties({"categorie", "lignes"})
 	private List<Medicament> medicaments = new LinkedList<>();
 
+	/**
+	 * Une catégorie peut être fournie par plusieurs fournisseurs.
+	 * Côté inverse de la relation ManyToMany (le côté propriétaire est dans Fournisseur).
+	 */
+	@ToString.Exclude
+	@ManyToMany(mappedBy = "categories")
+	@JsonIgnoreProperties({"categories"})
+	private List<Fournisseur> fournisseurs = new LinkedList<>();
+
 }

@@ -181,3 +181,36 @@ INSERT INTO LIGNE (COMMANDE_NUMERO, MEDICAMENT_REFERENCE, QUANTITE) VALUES
 (6, 6, 110), (6, 16, 65), (6, 26, 85), (6, 36, 60), (6, 91, 70),
 (7, 7, 80), (7, 17, 50), (7, 27, 95), (7, 37, 55), (7, 100, 45),
 (8, 8, 100), (8, 18, 75), (8, 28, 80), (8, 38, 70), (8, 48, 60);
+
+-- Insertion des fournisseurs
+INSERT INTO FOURNISSEUR (ID, NOM, EMAIL) VALUES
+(1, 'PharmaDistrib Afrique', 'nourkhalifi74@gmail.com'),
+(2, 'MediSupply International', 'nourelhoudakhelifi0@gmail.com'),
+(3, 'SantéPlus Sénégal', 'connecteddining492@gmail.com'),
+(4, 'AfricaPharma Group', 'contact+africapharma@gmail.com'),
+(5, 'GlobalMed Distribution', 'contact+globalmed@gmail.com'),
+(6, 'BioPharm Express', 'contact+biopharm@gmail.com');
+ALTER SEQUENCE fournisseur_id_seq RESTART WITH 7;
+
+-- Association fournisseurs-catégories (chaque catégorie a au moins 2 fournisseurs)
+INSERT INTO FOURNISSEUR_CATEGORIES (FOURNISSEUR_ID, CATEGORIE_CODE) VALUES
+-- Catégorie 1 (Antalgiques) : fournisseurs 1, 2
+(1, 1), (2, 1),
+-- Catégorie 2 (Anti-inflammatoires) : fournisseurs 1, 4
+(1, 2), (4, 2),
+-- Catégorie 3 (Antibiotiques) : fournisseurs 1, 2, 5 (fournisseur 1 ajouté)
+(1, 3), (2, 3), (5, 3),
+-- Catégorie 4 (Antihypertenseurs) : fournisseurs 2, 6
+(2, 4), (6, 4),
+-- Catégorie 5 (Antidiabétiques) : fournisseurs 3, 4, 5 (fournisseur 3 ajouté)
+(3, 5), (4, 5), (5, 5),
+-- Catégorie 6 (Antihistaminiques) : fournisseurs 1, 6
+(1, 6), (6, 6),
+-- Catégorie 7 (Vitamines) : fournisseurs 2, 3
+(2, 7), (3, 7),
+-- Catégorie 8 (Cardiovasculaires) : fournisseurs 3, 4, 6 (fournisseur 3 ajouté)
+(3, 8), (4, 8), (6, 8),
+-- Catégorie 9 (Gastro-intestinaux) : fournisseurs 1, 5
+(1, 9), (5, 9),
+-- Catégorie 10 (Respiratoires) : fournisseurs 2, 3, 4
+(2, 10), (3, 10), (4, 10);

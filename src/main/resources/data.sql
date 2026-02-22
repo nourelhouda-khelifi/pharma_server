@@ -18,7 +18,7 @@ ALTER TABLE Categorie ALTER COLUMN code RESTART WITH 11;
 
 -- Catégorie 1: Antalgiques et Antipyrétiques
 INSERT INTO MEDICAMENT (NOM, CATEGORIE_CODE, QUANTITE_PAR_UNITE, PRIX_UNITAIRE, UNITES_EN_STOCK, UNITES_COMMANDEES, NIVEAU_DE_REAPPRO, INDISPONIBLE, imageURL) VALUES
-('Paracétamol 500mg', 1, 'Boîte de 16 comprimés', 2.50, 500, 0, 50, false, 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400'),
+('Paracétamol 500mg', 1, 'Boîte de 16 comprimés', 2.50, 30, 0, 50, false, 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400'),
 ('Paracétamol 1000mg', 1, 'Boîte de 8 comprimés', 3.20, 350, 0, 40, false, 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400'),
 ('Ibuprofène 200mg', 1, 'Boîte de 20 comprimés', 3.80, 400, 0, 45, false, 'https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=400'),
 ('Ibuprofène 400mg', 1, 'Boîte de 12 comprimés', 4.50, 320, 0, 35, false, 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400'),
@@ -44,7 +44,7 @@ INSERT INTO MEDICAMENT (NOM, CATEGORIE_CODE, QUANTITE_PAR_UNITE, PRIX_UNITAIRE, 
 
 -- Catégorie 3: Antibiotiques
 INSERT INTO MEDICAMENT (NOM, CATEGORIE_CODE, QUANTITE_PAR_UNITE, PRIX_UNITAIRE, UNITES_EN_STOCK, UNITES_COMMANDEES, NIVEAU_DE_REAPPRO, INDISPONIBLE, imageURL) VALUES
-('Amoxicilline 500mg', 3, 'Boîte de 12 gélules', 5.90, 400, 0, 40, false, 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400'),
+('Amoxicilline 500mg', 3, 'Boîte de 12 gélules', 5.90, 20, 0, 40, false, 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400'),
 ('Amoxicilline + Acide Clavulanique 1g', 3, 'Boîte de 8 comprimés', 8.50, 350, 0, 35, false, 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400'),
 ('Azithromycine 250mg', 3, 'Boîte de 6 comprimés', 9.80, 280, 0, 30, false, 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=400'),
 ('Ciprofloxacine 500mg', 3, 'Boîte de 10 comprimés', 12.30, 220, 0, 25, false, 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400'),
@@ -76,7 +76,7 @@ INSERT INTO MEDICAMENT (NOM, CATEGORIE_CODE, QUANTITE_PAR_UNITE, PRIX_UNITAIRE, 
 ('Glimépiride 2mg', 5, 'Boîte de 30 comprimés', 7.20, 280, 0, 28, false, 'https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=400'),
 ('Sitagliptine 100mg', 5, 'Boîte de 28 comprimés', 45.80, 150, 0, 15, false, 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400'),
 ('Vildagliptine 50mg', 5, 'Boîte de 56 comprimés', 42.50, 180, 0, 18, false, 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400'),
-('Empagliflozine 10mg', 5, 'Boîte de 30 comprimés', 48.90, 120, 0, 12, false, 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=400'),
+('Empagliflozine 10mg', 5, 'Boîte de 30 comprimés', 48.90, 5, 0, 12, false, 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=400'),
 ('Insuline Rapide', 5, 'Flacon de 10ml', 25.00, 200, 0, 20, false, 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400'),
 ('Insuline Lente', 5, 'Flacon de 10ml', 28.50, 180, 0, 18, false, 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400'),
 ('Pioglitazone 30mg', 5, 'Boîte de 28 comprimés', 38.60, 100, 0, 10, false, 'https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=400');
@@ -117,7 +117,7 @@ INSERT INTO MEDICAMENT (NOM, CATEGORIE_CODE, QUANTITE_PAR_UNITE, PRIX_UNITAIRE, 
 ('Digoxine 0.25mg', 8, 'Boîte de 30 comprimés', 5.40, 200, 0, 20, false, 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400'),
 ('Furosémide 40mg', 8, 'Boîte de 30 comprimés', 4.20, 380, 0, 38, false, 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=400'),
 ('Spironolactone 25mg', 8, 'Boîte de 30 comprimés', 6.80, 250, 0, 25, false, 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400'),
-('Ivabradine 5mg', 8, 'Boîte de 56 comprimés', 32.50, 150, 0, 15, false, 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400'),
+('Ivabradine 5mg', 8, 'Boîte de 56 comprimés', 32.50, 10, 0, 15, false, 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400'),
 ('Isosorbide Dinitrate 20mg', 8, 'Boîte de 60 comprimés', 8.90, 220, 0, 22, false, 'https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=400');
 
 -- Catégorie 9: Médicaments Gastro-intestinaux
@@ -181,3 +181,36 @@ INSERT INTO LIGNE (COMMANDE_NUMERO, MEDICAMENT_REFERENCE, QUANTITE) VALUES
 (6, 6, 110), (6, 16, 65), (6, 26, 85), (6, 36, 60), (6, 91, 70),
 (7, 7, 80), (7, 17, 50), (7, 27, 95), (7, 37, 55), (7, 100, 45),
 (8, 8, 100), (8, 18, 75), (8, 28, 80), (8, 38, 70), (8, 48, 60);
+
+-- Insertion des fournisseurs
+INSERT INTO FOURNISSEUR (ID, NOM, EMAIL) VALUES
+(1, 'PharmaDistrib Afrique', 'dinesphere02@gmail.com'),
+(2, 'MediSupply International', 'nourelhoudakhelifi0@gmail.com'),
+(3, 'SantéPlus Sénégal', 'connecteddining492@gmail.com'),
+(4, 'AfricaPharma Group', 'nourkhalifi74@gmail.com'),
+(5, 'GlobalMed Distribution', 'contact+globalmed@gmail.com'),
+(6, 'BioPharm Express', 'contact+biopharm@gmail.com');
+ALTER TABLE Fournisseur ALTER COLUMN id RESTART WITH 7;
+
+-- Association fournisseurs-catégories (chaque catégorie a au moins 2 fournisseurs)
+INSERT INTO FOURNISSEUR_CATEGORIES (FOURNISSEUR_ID, CATEGORIE_CODE) VALUES
+-- Catégorie 1 (Antalgiques) : fournisseurs 1, 2
+(1, 1), (2, 1),
+-- Catégorie 2 (Anti-inflammatoires) : fournisseurs 1, 4
+(1, 2), (4, 2),
+-- Catégorie 3 (Antibiotiques) : fournisseurs 1, 2, 5 (fournisseur 1 ajouté)
+(1, 3), (2, 3), (5, 3),
+-- Catégorie 4 (Antihypertenseurs) : fournisseurs 2, 6
+(2, 4), (6, 4),
+-- Catégorie 5 (Antidiabétiques) : fournisseurs 3, 4, 5 (fournisseur 3 ajouté)
+(3, 5), (4, 5), (5, 5),
+-- Catégorie 6 (Antihistaminiques) : fournisseurs 1, 6
+(1, 6), (6, 6),
+-- Catégorie 7 (Vitamines) : fournisseurs 2, 3
+(2, 7), (3, 7),
+-- Catégorie 8 (Cardiovasculaires) : fournisseurs 3, 4, 6 (fournisseur 3 ajouté)
+(3, 8), (4, 8), (6, 8),
+-- Catégorie 9 (Gastro-intestinaux) : fournisseurs 1, 5
+(1, 9), (5, 9),
+-- Catégorie 10 (Respiratoires) : fournisseurs 2, 3, 4
+(2, 10), (3, 10), (4, 10);
