@@ -1,5 +1,12 @@
 # Spring Boot Application - Gestion Pharmaceutique
 
+## Déploiement
+L'application est déployée sur Render : **https://pharma-server-k88v.onrender.com/**
+
+- API REST : https://pharma-server-k88v.onrender.com/api/medicaments
+- Service d'approvisionnement : https://pharma-server-k88v.onrender.com/api/services/approvisionnement
+- Swagger UI : https://pharma-server-k88v.onrender.com/swagger-ui.html
+
 ## Description
 Ce projet est une application Spring Boot destinée à une pharmacie centrale qui permet à des dispensaires de commander des médicaments. L'API fournie comprends la gestion des médicaments et des commandes pour les dispensaires. Elle utilise des entités JPA pour interagir avec une base de données, des services REST exposés via des contrôleurs, et des dépôts pour accéder aux données.
 
