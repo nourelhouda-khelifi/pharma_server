@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 import pharmacie.entity.Medicament;
 
@@ -68,5 +69,16 @@ public interface MedicamentRepository extends JpaRepository<Medicament, Integer>
        AND m.unitesEnStock > m.unitesCommandees
      """)
     List<Medicament> medicamentsDisponibles();
+
+    /**
+     * Recherche les médicaments dont le nom contient la chaîne donnée (insensible à la casse).
+     * Exposé automatiquement par Spring Data REST :
+     * GET /api/medicaments/search/chercherParNom?nom=xxx
+     *
+     * @param nom la chaîne à rechercher dans le nom
+     * @return la liste des médicaments correspondants
+     */
+    @RestResource(path = "chercherParNom", rel = "chercherParNom")
+    List<Medicament> findByNomContainingIgnoreCase(String nom);
 
 }
